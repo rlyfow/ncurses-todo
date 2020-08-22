@@ -276,7 +276,7 @@ int drawWindow(state * app)
 			}
 			move(i-app->scroll, 1);
 			if(i == app->cursor) attron(A_REVERSE);
-			printw("%s", wrapString(app->tasks[i].name, app->maxx/2).c_str());
+			printw(" %s", wrapString(app->tasks[i].name, app->maxx/2-1).c_str());
 			attroff(A_REVERSE);
 			attroff(A_DIM);
 			
