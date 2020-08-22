@@ -85,7 +85,7 @@ int deleteEntry(state * app, int id)
 	}
 	
 	int j=0;
-	for(int i=0; i<app->entry_count; i++)
+	for(int i=0; i<=app->entry_count; i++)
 	{
 		if(i==id) continue;
 		new_list[j] = app->tasks[i];
